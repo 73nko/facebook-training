@@ -1,0 +1,40 @@
+{
+  "name": "facebook-training",
+  "version": "1.0.0",
+  "description": "Traininig exercises for the Facebook code interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/73nko/facebook-training.git"
+  },
+  "keywords": [
+    "facebook",
+    "interview",
+    "algorithms",
+    "data-structures"
+  ],
+  "author": "73nko <apramos89@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/73nko/facebook-training/issues"
+  },
+  "homepage": "https://github.com/73nko/facebook-training#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "jest": "^27.5.1",
+    "prettier": "2.5.1"
+  }
+}
