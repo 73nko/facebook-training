@@ -191,4 +191,10 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|mjs?|tsx?|ts?)$",
+  transform: {
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.mjs$": "babel-jest",
+  },
+  moduleFileExtensions: ["js", "jsx", "mjs"],
 };
