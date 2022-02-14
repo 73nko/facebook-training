@@ -1,18 +1,15 @@
 export function numberOfWays(arr, k) {
-  const sortedArr = arr.sort((a, b) => a - b);
+  const m = new Map();
   let count = 0;
-
-  for (let i = 0; i < sortedArr.length; i++) {
-    const first = sortedArr[i];
-    if (first >= k) break;
-    for (let j = i + 1; j < sortedArr.length; j++) {
-      const second = sortedArr[j];
-      if (second >= k) break;
-      if (first + second === k) {
-        count++;
-      }
+  for (let i = 0; i < arr.length; i++) {
+    if (m.has(k - arr[i])) {
+      count += m.get(k - arr[i]);
+    }
+    if (m.has(arr[i])) {
+      m.set(arr[i], m.get(arr[i]) + 1);
+    } else {
+      m.set(arr[i], 1);
     }
   }
-
   return count;
 }
