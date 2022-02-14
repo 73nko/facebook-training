@@ -1,6 +1,6 @@
-import { getMaxAdditionalDinersCount } from "./index.mjs";
+import { getMaxAdditionalDinersCount } from "./cafeteria.mjs";
 
-describe("getWrongAnswers", () => {
+describe("getMaxAdditionalDinersCount", () => {
   it("should return the sum of two numbers", () => {
     const result = getMaxAdditionalDinersCount(15, 2, 3, [11, 6, 14]);
 
