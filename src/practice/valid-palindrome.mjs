@@ -3,24 +3,22 @@
  * @return {boolean}
  */
 
-const isValid = (s) => {
-  const reversed = [...s].reverse().join("");
-
-  return s.join("") === reversed;
-};
 export function validPalindrome(s) {
-  const sArr = s.split("");
-  if (isValid(sArr)) return true;
-
-  let j = sArr.length;
-
-  while (j > 0) {
-    if (isValid(sArr.filter((_, i) => i !== j))) return true;
-
-    j--;
-  }
-
-  return false;
+  return isPalindrome(s, 0, s.length - 1, true);
 }
 
-validPalindrome("abc");
+const isPalindrome = (s, start, end, skip) => {
+  while (start <= end) {
+    if (s[start] !== s[end]) {
+      if (skip)
+        return (
+          isPalindrome(s, start + 1, end, false) ||
+          isPalindrome(s, start, end - 1, false)
+        );
+      else return false;
+    }
+    start++;
+    end--;
+  }
+  return true;
+};
