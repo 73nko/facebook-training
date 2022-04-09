@@ -93,6 +93,3 @@ In this case we have just two identity ids (FA54 and 85CD). We can see the data 
 The output must be written to `stdout`. It must contain one line per identified identity with the identity id followed by the arrow (-->) and then the colour indicator.
 The order matters: the identity ids have to be sorted from smallest to largest (as you can see in the example above, 85CD first than FA54)
 
-## Submission
-
-Please send your source code to <isidro.garcia@aircall.io> for verification once you are confident it solves the problem as requested. The email timestamp will be used to determine the scores.
