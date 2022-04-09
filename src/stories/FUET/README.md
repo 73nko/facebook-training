@@ -1,6 +1,6 @@
 # Fraud score
 
-Aircall is testing a new service called Fraud Unknown Entities Tracer (also known as FUET) that can help us to detect suspicious accesses to our applications.
+$company is testing a new service called Fraud Unknown Entities Tracer (also known as FUET) that can help us to detect suspicious accesses to our applications.
 FUET provides a list of identities, the devices by identity and the accesses by the device. Each access will have a numeric score (higher, more options to be a fraudulent attempt)
 
 The provided input by FUET is an unordered list with all this info. The format of each entity follows the following rules:
